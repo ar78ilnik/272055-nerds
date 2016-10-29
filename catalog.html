@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ru">
 <head>
 	<meta charset="utf-8">
 	<title>Nerds</title>
 </head>
 <body>
 <header>
-	<img src="#" width="30" height="30" alt="logo">
+	<a href="index.html"><img src="img/image-index/nerds-logo.png" width="160" height="65" alt="logo"></a>
 	<nav>
 		<ul>
 			<li><a href="#">Студия</a></li>
@@ -18,54 +18,140 @@
 	<div class="card">
 		<a href="#">Корзина</a>
 	</div>
-	<h1>магазин готовых шаблонов</h1>
+	<h1>Магазин готовых шаблонов</h1>
 </header>
+
 <main>
-	<form action="#" method="post">
-		<h2>Стоимость</h2>
-		<input type="range" name="range" min=0 max=15000 step=1000>
-		<div><p>От</p></div><input type="text"><p>До</p><input type="text">
-	</form>
-	<form action="#" method="post">
-		<h2>Сетка</h2>
-		<input type="radio" name="adapted" checked="checked">Адаптивная<br>
-		<input type="radio" name="fixed">Фиксированная<br>
-		<input type="radio" name="rubber">Резинованная
-	</form>
-	<form action="#" method="post">
-   
-		<h2>Особенности</h2>
-		<input type="checkbox" name="slider" checked="checked">Слайдер<br>
-		<input type="checkbox" name="featchers-block">Блок преимуществ<br>
-		<input type="checkbox" name="news" checked="checked">Новости<br>
-		<input type="checkbox" name="galery">Галерея<br>
-		<input type="checkbox" name="box">Корзина<br>
-	</form>
-<form>
-	<input type="submit" value="Показать">
-	</form>
-	<div class="catalog">
+	<aside>
+		<form action="#" method="post">
+			<h2>СТОИМОСТЬ:</h2>
+			<input type="range" name="range" min=0 max=15000 step=1000>
+			<div class="price">
+				<label>ОТ<input type="text" value="0"></label>
+				<label>ДО<input type="text" value="15000"></label>
+			</div>
+		</form>
+
+		<form action="#" method="post">
+			<h2>Сетка</h2>
+			<input type="radio" name="adapted" checked="checked">Адаптивная<br>
+			<input type="radio" name="fixed">Фиксированная<br>
+			<input type="radio" name="rubber">Резинованная
+		</form>
+	
+		<form action="#" method="post">
+   		<h2>ОСОБЕННОСТИ:</h2>
+			<input type="checkbox" name="slider" checked="checked">Слайдер<br>
+			<input type="checkbox" name="featchers-block">Блок преимуществ<br>
+			<input type="checkbox" name="news" checked="checked">Новости<br>
+			<input type="checkbox" name="galery">Галерея<br>
+			<input type="checkbox" name="box">Корзина<br>
+		</form>
+
+		<input type="submit" value="ПОКАЗАТЬ">
+	</aside>
+
+	<section class="catalog-items">
+
+	<div class="sort">	
 		<span>Сортировать</span>
 			<ul>
 				<li>по цене</li>
 				<li>по типу</li>
 				<li>по названию</li>
 			</ul>
-		<div class="catalog-items">
-			<img class="catalog-items sedona" src="#" width="50" height="200" alt="sedona">
-			<img class="catalog-items pink" src="#" width="50" height="200" alt="pink">
-			<img class="catalog-items barbeshop" src="#" width="50" height="200" alt="barbeshop">
-			<img class="catalog-items mishka" src="#" width="50" height="200" alt="mishka">
-			<img class="catalog-items a-plus" src="#" width="50" height="200" alt="a-plus">
-			<img class="catalog-items kvas" src="#" width="50" height="200" alt="kvas">
-		</div>
-		<div class="pages">
-            <a href="#1">1</a>
+	</div>
+
+		<article class="catalog-items sedona">		
+			<img src="img/image-catalog/img-sedonia.jpg" width="360" height="576" alt="sedona-hover">
+			<div class="sedona-hover">
+				<h2>Sedona</h2>
+				<span>Информационный сайт для туристов</span>
+				<input type="button" value="9 900 руб.">
+			</div>
+		</article>
+
+		<article class="catalog-items pink">		
+			<img src="img/image-catalog/img-pink.jpg" width="360" height="576" alt="pink-hover">
+			<div class="pink-hover">
+				<h2>Pink App</h2>
+				<span>Продуктовый лендинг приложения для iOS и Android</span>
+				<input type="button" value="9 900 руб.">
+			</div>
+		</article>
+
+		<article class="catalog-items barbeshop">		
+			<img src="img/image-catalog/img-barbeshop.jpg" width="360" height="576" alt="barbeshop-hover">
+			<div class="barbeshop-hover">
+				<h2>Barbeshop</h2>
+				<span>Сайт салоны красоты. Для мужчин, да.</span>
+				<input type="button" value="9 900 руб.">
+			</div>
+		</article>
+		
+		<article class="catalog-items mishka">
+		<img src="img/image-catalog/img-mishka.jpg" width="360" height="576" alt="mishka-hover">
+			<div class="mishka-hover">
+				<h2>MISHKA</h2>
+				<span>Интернет-магазин вязаных игрушек</span>
+				<input type="button" value="9 900 руб.">
+			</div>
+		</article>
+
+		<article class="catalog-items a-plus">
+		<img src="img/image-catalog/img-aplus.jpg" width="360" height="576" alt="aplus-hover">
+			<div class="aplus-hover">
+				<h2>A PLUS</h2>
+				<span>Интернет-магазин вязаных игрушек</span>
+				<input type="button" value="9 900 руб.">
+			</div>
+		</article>
+		
+		<article class="catalog-items kvast">
+		<img src="img/image-catalog/img-kvast.jpg" width="360" height="576" alt="kvas-hover">
+			<div class="kvast-hover">
+				<h2>КВАСТ</h2>
+				<span>Промо-сайт производителя крафтового кваса</span>
+				<input type="button" value="9 900 руб.">
+			</div>
+		</article>
+	</section>
+
+		<section class="pages">
+    	<a href="#1">1</a>
 			<a href="#2">2</a>
 			<a href="#3">3</a>
 			<a href="next">Следующая</a>
-        </div>
+    </section>
+
+	<div class="map">
+
+		<div class="map-adress">		
+			<address>
+				<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+				<p>тел. +7 (812) 275-75-75</p>
+				<a class="map-adress-link" href="#">Напишите нам</a>
+			</address>
+		</div>
+		
+		<img src="img/image-index/map-marker.png" width="231" height="190" alt="maps marker">
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.599104370521!			2d30.320889251472693!3d59.93879418178727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Rusia%2C+191186!5e0!3m2!1ses!2ses!4v1477687622874" width="600" height="600" style="border:0" allowfullscreen></iframe>
+
 	</div>
+
+		<footer>
+		<div class="social">
+			<a class="social btn-vk" href="img/image-index/vk-icon.png"></a>
+			<a class="social btn-fb" href="img/image-index/fb-icon.png"></a>
+			<a class="social btn-inst" href="img/image-index/inst-icon.png"></a>
+		</div>
+		<div class="footer-promo">
+			<h3 class="friends">Давайте дружить, это выгодно!</h3>
+			<p>Скидка 10% для друзей из социальных сетей</p>
+		</div>
+	</footer>
+
 </main>
 </body>
 </html>
