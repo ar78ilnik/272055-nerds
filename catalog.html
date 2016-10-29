@@ -25,7 +25,7 @@
 <main>
 	<aside>
 		<form action="#" method="post">
-			<h2>СТОИМОСТЬ:</h2>
+			<legend>СТОИМОСТЬ:</legend>
 			<input type="range" name="range" min=0 max=15000 step=1000>
 			<div class="price">
 				<label>ОТ<input type="text" value="0"></label>
@@ -34,19 +34,27 @@
 		</form>
 
 		<form action="#" method="post">
-			<h2>Сетка</h2>
-			<input type="radio" name="adapted" checked="checked">Адаптивная<br>
-			<input type="radio" name="fixed">Фиксированная<br>
-			<input type="radio" name="rubber">Резинованная
+			<legend>Сетка</legend>
+			<input type="radio" name="site_layout" checked="checked">
+			<label for="adapt">Адаптивная</label><br>
+			<input type="radio" name="site_layout">
+			<label for="fixed">Фиксированная</label><br>
+			<input type="radio" name="sit_layout">
+			<label for="rubber">Резиновая</label>
 		</form>
 	
 		<form action="#" method="post">
-   		<h2>ОСОБЕННОСТИ:</h2>
-			<input type="checkbox" name="slider" checked="checked">Слайдер<br>
-			<input type="checkbox" name="featchers-block">Блок преимуществ<br>
-			<input type="checkbox" name="news" checked="checked">Новости<br>
-			<input type="checkbox" name="galery">Галерея<br>
-			<input type="checkbox" name="box">Корзина<br>
+   		<legend>ОСОБЕННОСТИ:</legend>
+			<input type="checkbox" name="features" checked="checked">
+			<label for="slider">Слайдер</label><br>
+			<input type="checkbox" name="features">
+			<label for="features_block">Блок преимуществ</label><br>
+			<input type="checkbox" name="features" checked="checked">
+			<label for="news">Новости</label><br>
+			<input type="checkbox" name="features">
+			<label for="gallery">Галерея</label><br>
+			<input type="checkbox" name="features">
+			<label for="trash">Корзина</label>
 		</form>
 
 		<input type="submit" value="ПОКАЗАТЬ">
