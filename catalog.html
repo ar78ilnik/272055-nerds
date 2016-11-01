@@ -1,166 +1,156 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-	<meta charset="utf-8">
-	<title>Nerds</title>
-</head>
-<body>
-<header>
+		<html lang="ru">
+				<head>
+						<meta charset="utf-8">
+	 				<title>Nerds</title>
+						<link rel="stylesheet" type="text/css" href="css/style.css">
+				</head>
+		
+		<body>
+				<header>
+						<nav>
+								<a href="index.html"><img src="img/image-index/nerds-logo.png" width="160" height="65" alt="logo"></a>
+								<ul>
+										<li><a href="#">Студия</a></li>
+										<li><a href="#">Клиенты</a></li>
+										<li><a href="#">Магазин</a></li>
+										<li><a href="#">Контакты</a></li>
+								</ul>
+						</nav>
+						<div class="card">
+								<a href="#">Корзина</a>
+						</div>
+						<h1>Магазин готовых шаблонов</h1>
+				</header>
+
+				<main>
+						<aside>
+								<form action="#" method="post">
+										<h3>СТОИМОСТЬ:</h3>
+												<input type="range" name="range" min=0 max=15000 step=1000>
+												<div class="price">
+														<label>ОТ<input type="text" value="0"></label>
+														<label>ДО<input type="text" value="15000"></label>
+												</div>
+								
+												<h3>Сетка</h3>
+														<label><input type="radio" name="site_layout" checked="checked">Адаптивная</label><br>
+														<label><input type="radio" name="site_layout">Фиксированная</label><br>
+														<label><input type="radio" name="sit_layout">Резиновая</label>
+												
+		
+												<h3>ОСОБЕННОСТИ:</h3>
+														<label><input type="checkbox" name="features" checked="checked">Слайдер</label><br>
+														<label><input type="checkbox" name="features">Блок преимуществ</label><br>
+														<label><input type="checkbox" name="features" checked="checked">Новости</label><br>
+														<label><input type="checkbox" name="features">Галерея</label><br>
+														<label><input type="checkbox" name="features">Корзина</label>
+										</form>
+		
+										<input type="submit" value="ПОКАЗАТЬ">
+								</aside>
+		
+								<section class="catalog-items">
+				
+										<div class="sort">	
+												<span>Сортировать</span>
+												<ul>
+														<li>по цене</li>
+														<li>по типу</li>
+														<li>по названию</li>
+												</ul>
+										</div>
 	
-	<nav>
-	<a href="index.html"><img src="img/image-index/nerds-logo.png" width="160" height="65" alt="logo"></a>
-		<ul>
-			<li><a href="#">Студия</a></li>
-			<li><a href="#">Клиенты</a></li>
-			<li><a href="#">Магазин</a></li>
-			<li><a href="#">Контакты</a></li>
-		</ul>
-	</nav>
-	<div class="card">
-		<a href="#">Корзина</a>
-	</div>
-	<h1>Магазин готовых шаблонов</h1>
-</header>
-
-<main>
-	<aside>
-		<form action="#" method="post">
-			<legend>СТОИМОСТЬ:</legend>
-			<input type="range" name="range" min=0 max=15000 step=1000>
-			<div class="price">
-				<label>ОТ<input type="text" value="0"></label>
-				<label>ДО<input type="text" value="15000"></label>
-			</div>
-		</form>
-
-		<form action="#" method="post">
-			<legend>Сетка</legend>
-			<input type="radio" name="site_layout" checked="checked">
-			<label for="adapt">Адаптивная</label><br>
-			<input type="radio" name="site_layout">
-			<label for="fixed">Фиксированная</label><br>
-			<input type="radio" name="sit_layout">
-			<label for="rubber">Резиновая</label>
-		</form>
-	
-		<form action="#" method="post">
-   		<legend>ОСОБЕННОСТИ:</legend>
-			<input type="checkbox" name="features" checked="checked">
-			<label for="slider">Слайдер</label><br>
-			<input type="checkbox" name="features">
-			<label for="features_block">Блок преимуществ</label><br>
-			<input type="checkbox" name="features" checked="checked">
-			<label for="news">Новости</label><br>
-			<input type="checkbox" name="features">
-			<label for="gallery">Галерея</label><br>
-			<input type="checkbox" name="features">
-			<label for="trash">Корзина</label>
-		</form>
-
-		<input type="submit" value="ПОКАЗАТЬ">
-	</aside>
-
-	<section class="catalog-items">
-
-	<div class="sort">	
-		<span>Сортировать</span>
-			<ul>
-				<li>по цене</li>
-				<li>по типу</li>
-				<li>по названию</li>
-			</ul>
-	</div>
-
-		<article class="catalog-items sedona">		
-			<img src="img/image-catalog/img-sedonia.jpg" width="360" height="576" alt="sedona-hover">
-			<div class="sedona-hover">
-				<h2>Sedona</h2>
-				<span>Информационный сайт для туристов</span>
-				<input type="button" value="9 900 руб.">
-			</div>
-		</article>
-
-		<article class="catalog-items pink">		
-			<img src="img/image-catalog/img-pink.jpg" width="360" height="576" alt="pink-hover">
-			<div class="pink-hover">
-				<h2>Pink App</h2>
-				<span>Продуктовый лендинг приложения для iOS и Android</span>
-				<input type="button" value="9 900 руб.">
-			</div>
-		</article>
-
-		<article class="catalog-items barbeshop">		
-			<img src="img/image-catalog/img-barbeshop.jpg" width="360" height="576" alt="barbeshop-hover">
-			<div class="barbeshop-hover">
-				<h2>Barbeshop</h2>
-				<span>Сайт салоны красоты. Для мужчин, да.</span>
-				<input type="button" value="9 900 руб.">
-			</div>
-		</article>
+										<article class="catalog-items">		
+												<img src="img/image-catalog/img-sedonia.jpg" width="360" height="576" alt="sedona-hover">
+												<div class="catalog-item-description">
+														<h2>Sedona</h2>
+														<span>Информационный сайт для туристов</span>
+														<label><input type="button" value="9 900 руб."></label>
+												</div>
+										</article>
 		
-		<article class="catalog-items mishka">
-		<img src="img/image-catalog/img-mishka.jpg" width="360" height="576" alt="mishka-hover">
-			<div class="mishka-hover">
-				<h2>MISHKA</h2>
-				<span>Интернет-магазин вязаных игрушек</span>
-				<input type="button" value="9 900 руб.">
-			</div>
-		</article>
-
-		<article class="catalog-items a-plus">
-		<img src="img/image-catalog/img-aplus.jpg" width="360" height="576" alt="aplus-hover">
-			<div class="aplus-hover">
-				<h2>A PLUS</h2>
-				<span>Интернет-магазин вязаных игрушек</span>
-				<input type="button" value="9 900 руб.">
-			</div>
-		</article>
+										<article class="catalog-items">		
+												<img src="img/image-catalog/img-pink.jpg" width="360" height="576" alt="pink-hover">
+												<div class="catalog-item-description">
+														<h2>Pink App</h2>
+														<span>Продуктовый лендинг приложения для iOS и Android</span>
+														<label><input type="button" value="9 900 руб."></label>
+												</div>
+										</article>
 		
-		<article class="catalog-items kvast">
-		<img src="img/image-catalog/img-kvast.jpg" width="360" height="576" alt="kvas-hover">
-			<div class="kvast-hover">
-				<h2>КВАСТ</h2>
-				<span>Промо-сайт производителя крафтового кваса</span>
-				<input type="button" value="9 900 руб.">
-			</div>
-		</article>
-	</section>
-
-		<section class="pages">
-    	<a href="#1">1</a>
-			<a href="#2">2</a>
-			<a href="#3">3</a>
-			<a href="next">Следующая</a>
-    </section>
-
-	<div class="map">
-
-		<div class="map-adress">		
-			<address>
-				<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-				<p>тел. +7 (812) 275-75-75</p>
-				<a class="map-adress-link" href="#">Напишите нам</a>
-			</address>
-		</div>
+										<article class="catalog-items">		
+												<img src="img/image-catalog/img-barbeshop.jpg" width="360" height="576" alt="barbeshop-hover">
+												<div class="catalog-item-description">
+														<h2>Barbeshop</h2>
+														<span>Сайт салоны красоты. Для мужчин, да.</span>
+														<label><input type="button" value="9 900 руб."></label>
+												</div>
+										</article>
 		
-		<img src="img/image-index/map-marker.png" width="231" height="190" alt="maps marker">
+										<article class="catalog-items">
+												<img src="img/image-catalog/img-mishka.jpg" width="360" height="576" alt="mishka-hover">
+												<div class="catalog-item-description">
+														<h2>MISHKA</h2>
+														<span>Интернет-магазин вязаных игрушек</span>
+														<label><input type="button" value="9 900 руб."></label>
+												</div>
+										</article>
+		
+										<article class="catalog-items">
+												<img src="img/image-catalog/img-aplus.jpg" width="360" height="576" alt="aplus-hover">
+												<div class="catalog-item-description">
+														<h2>A PLUS</h2>
+														<span>Интернет-магазин вязаных игрушек</span>
+														<label><input type="button" value="9 900 руб."></label>
+												</div>
+										</article>
+		
+										<article class="catalog-items">
+												<img src="img/image-catalog/img-kvast.jpg" width="360" height="576" alt="kvas-hover">
+												<div class="catalog-item-description">
+														<h2>КВАСТ</h2>
+														<span>Промо-сайт производителя крафтового кваса</span>
+														<label><input type="button" value="9 900 руб."></label>
+												</div>
+										</article>
+								</section>
 
-		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.599104370521!			2d30.320889251472693!3d59.93879418178727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Rusia%2C+191186!5e0!3m2!1ses!2ses!4v1477687622874" width="600" height="600" style="border:0" allowfullscreen></iframe>
+								<ul class="pagination">
+		  						<li><a class="active-page" href="#">1</a></li>
+										<li><a href="#2">2</a></li>
+										<li><a href="#3">3</a></li>
+										<li><a class="next-page" href="#">Следующая</a></li>
+		  				</ul>
 
-	</div>
+								<div class="map">
+										<div class="map-adress">		
+												<address>
+														<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+														<p>тел. +7 (812) 275-75-75</p>
+														<a class="map-adress-link" href="#">Напишите нам</a>
+												</address>
+										</div>
+			
+										<img src="img/image-index/map-marker.png" width="231" height="190" alt="maps marker">
+			
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.599104370521!2d30.320889251472693!3d59.93879418178727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Rusia%2C+191186!5e0!3m2!1ses!2ses!4v1477687622874" width="600" height="600" style="border:0" allowfullscreen></iframe>
 
-		<footer>
-		<div class="social">
-			<a class="social btn-vk" href="img/image-index/vk-icon.png"></a>
-			<a class="social btn-fb" href="img/image-index/fb-icon.png"></a>
-			<a class="social btn-inst" href="img/image-index/inst-icon.png"></a>
-		</div>
-		<div class="footer-promo">
-			<h3 class="friends">Давайте дружить, это выгодно!</h3>
-			<p>Скидка 10% для друзей из социальных сетей</p>
-		</div>
-	</footer>
+								</div>
 
-</main>
-</body>
+						</main>
+								<footer>
+										<ul class="social">
+												<li><a class="social btn-vk" href="https://vk.com">Vkontakte</a></li>
+												<li><a class="social btn-fb" href="https://www.facebook.com">Facebook</a></li>
+												<li><a class="social btn-inst" href="https://www.instagarm.com">Instagram</a></li>
+										</ul>
+
+										<div class="footer-promo">
+												<h3 class="friends">Давайте дружить, это выгодно!</h3>
+												<p>Скидка 10% для друзей из социальных сетей</p>
+										</div>
+								</footer>
+
+		</body>
 </html>
