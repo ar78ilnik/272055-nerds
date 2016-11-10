@@ -7,6 +7,14 @@ body {
   margin: 0 auto;
 }
 
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+/*Navigation*/
+
 .logo {
   float: left;
   margin-right: 200px;
@@ -32,11 +40,7 @@ body {
   float: left;
 }
 
-.clearfix::after {
-  display: table;
-  content: "";
-  clear: both;
-}
+/* File index.html*/
 
 section h1 {
   min-height: 110px;
@@ -112,42 +116,32 @@ section a {
   min-height: 180px; width: 260px; float: left; margin-right: 35px; margin-top: 60px;
 }
 
+/*catalog.html*/
 
-
-
-
-
-
-/*header {min-height: 70px; width: 1200px; border: 1px solid black;}
-
-
-.logo {
-float: left;
-margin-left: 140px;
-margin-top: 48px;
+.sort li {
+  display: inline-block;
 }
 
-nav {
-  float: left;
-  width: 440px;
-  margin-left: 200px;
-  border: 1px solid red;
+.price input {
+  width: 60px;
 }
 
-.card {
-  width: 180px;
-  float: right;
-  border: 1px solid yellow;
+.container {
+  margin-bottom: 83px;
 }
 
-li {
-    display: inline-block;
-    border: 1px solid black;
-    }
+h1 {
+  text-align: center;
+}
 
-  .clearfix::after {
-    display: table;
-    content: "";
-    clear: both;
-    }
-*/
+aside {
+  float: left; margin-right: 140px;
+}
+
+.catalog-items {
+  width: 780px; float: left;
+}
+
+.catalog-items article {
+  width: 360px; float: left; margin-right: 30px; margin-bottom: 36px;
+}
