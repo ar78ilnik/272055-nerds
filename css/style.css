@@ -13,7 +13,7 @@ body {
   clear: both;
 }
 
-/*Navigation*/
+/*Navigation for both files*/
 
 .logo {
   float: left;
@@ -115,6 +115,7 @@ section a {
 .friends div {
   min-height: 180px; width: 260px; float: left; margin-right: 35px; margin-top: 60px;
 }
+
 
 /*catalog.html*/
 
