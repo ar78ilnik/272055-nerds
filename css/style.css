@@ -146,3 +146,172 @@ aside {
 .catalog-items article {
   width: 360px; float: left; margin-right: 30px; margin-bottom: 36px;
 }
+
+/* checkbox sprite */
+.sprite {
+    background-image: url("../img/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-ico-checkbox-active {
+    width: 12px;
+    height: 12px;
+    background-position: -10px -10px;
+}
+
+.sprite-ico-fb {
+    width: 12px;
+    height: 22px;
+    background-position: -10px -10px;
+}
+
+.sprite-ico-inst {
+    width: 21px;
+    height: 21px;
+    background-position: 42px -10px;
+}
+
+.sprite-ico-vk {
+    width: 26px;
+    height: 15px;
+    background-position: 83px -10px;
+}
+
+.social {
+  display: inline-block;
+  vertical-align: top;
+  width: 43px;
+  height: 43px;
+  font-size: 0;
+  background-color: #000000;
+  position: relative;
+}
+
+.social::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.social:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-vk::before {
+  width: 26px;
+  height: 15px;
+  background-position: -83px -10px;
+}
+
+.btn-fb::before {
+  width: 12px;
+  height: 22px;
+  background-position: -10px -10px;
+}
+
+.btn-inst::before {
+  width: 21px;
+  height: 21px;
+  background-position: -42px -10px;
+}
+
+/* section catalog-items*/
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  display: block;
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  display: block;
+  width: 23px;
+  height: 23px;
+  background-image: url("img/image-catalog/checkbox-off.png");
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+input[type="checkbox"]:checked + label::after {
+  content: "";
+  width: 27px;
+  height: 23px;
+  background-image: url("img/image-catalog/checkbox-on.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+/* radio sprite */
+.sprite {
+    background-image: url("img/image-catalog/radio-sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-radio-on {
+    width: 25px;
+    height: 25px;
+    background-position: -16px -16px;
+}
+
+.sprite-radio-off {
+    width: 25px;
+    height: 25px;
+    background-position: -16px -73px;
+}
+
+.sprite-radio-off {
+    width: 25px;
+    height: 25px;
+    background-position: -16px -130px;
+}
+
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label {
+  display: block;
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="radio"] + label::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-position: -16px -130px;
+  background-image: url("img/image-catalog/radio-sprite.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+input[type="radio"]:checked + label::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  background-position: -16px -16px;
+  background-image: url("img/image-catalog/radio-sprite.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
