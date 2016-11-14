@@ -3,8 +3,9 @@ body {
   font-weight: 400;
   line-height: 30px;
   font-size: 16px;
-  width: 1200px;
-  margin: 0 auto;
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
 }
 
 .clearfix::after {
@@ -13,29 +14,68 @@ body {
   clear: both;
 }
 
-/*Navigation for both files*/
-
-.logo {
-  float: left;
-  margin-right: 200px;
-  margin-top: 50px;
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.main-navigation {
-  vertical-align: middle;
-  min-height: 65px;
-  float: left;
-  margin-right: 245px;
-  margin-top: 50px;
-}
-
-.main-navigation li {
-  display: inline-block;
-  margin-right: 50px;
+a {
+  text-transform: uppercase;
+  color: #000000;
   text-decoration: none;
 }
 
+.logo {
+  float: left;
+  width: 161px;
+  height: 65px;
+  margin-right: 200px;
+  margin-top: 50px;
+  background: url(../img/image-catalog/sprite-catalog/logo-sprite.png);
+  background-repeat: no-repeat;
+}
+
+.logo:link {background-position: 0 0;}
+.logo:hover {
+  background-position: 0 -130px;
+  cursor: pointer;
+}
+
+header ul li a:hover {
+  color: #ff003c;
+  text-decoration: underline;
+}
+/*Navigation for both files*/
+
+.main-navigation {
+  width: 440px;
+  float: left;
+  margin-right: 245px;
+  margin-top: 65px;
+}
+
+.main-navigation ul {
+  list-style: none;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation li {
+  font-size: 16px;
+  line-height: 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.main-navigation a {
+  display: block;
+  padding: 0 10px;
+}
+
 .card {
+  margin-top: 65px;
   min-height: 65px;
   float: left;
 }
@@ -43,18 +83,24 @@ body {
 /* File index.html*/
 
 section h1 {
+  font-size: 55px;
+  line-height: 55px;
   min-height: 110px;
-  width: 370px;
+  width: 380px;
   margin-top: 85px;
-  font-size: 50px;
+  text-align: left;
 }
 
 section p {
+  font-size: 16px;
+  line-height: 24px;
   width: 360px;
 }
 
 section a {
   display: inline-block;
+  font-size: 16px;
+  line-height: 18px;
   width: 240px;
   height: 50px;
 }
@@ -88,39 +134,142 @@ section a {
 }
 
 .sites {
-  width: 300px; float: left; margin-right: 100px;
+  width: 300px; float: left; margin-right: 90px;
 }
-.aplication {
-  width: 300px; float: left; margin-right: 100px;
+
+.sites:last-child {
+  width: 300px;
+  float: left;
+  margin-right: 80px;
 }
-.presentacion {
-  width: 300px; float: left; margin-right: 100px;
-}
+
 .features {
   margin-bottom: 170px;
 }
 
 .info {
-  width: 650px; float: left; margin-right: 140px;
+  width: 650px;
+  float: left;
+  margin-right: 140px;
 }
+
+.info ul {
+  list-style: none;
+}
+
 .promo {
   width: 360px; float: left;
 }
-.left-percent, .centre-percent, .right-percent {
-  width: 100px; margin-right: 27px;
-}
-.friends {
-  min-height: 180px;
-}
-.friends div {
-  min-height: 180px; width: 260px; float: left; margin-right: 35px; margin-top: 60px;
+
+.promo h3 {
+  font-size: 16px;
+  font-weight: bold;
 }
 
+.promo div {
+  float: left;
+  font-size: 16px;
+  width: 100px;
+  margin-right: 25px;
+}
+
+.promo div:last-child {
+  float: right;
+  margin-right: 0;
+}
+
+
+/*.friends div {
+  min-height: 180px;
+  float: left;
+  margin-right: 130px;
+  margin-top: 60px;
+  margin-bottom: 162px;
+}
+
+.friends div:last-child {
+  float: right;
+  margin-right: 0;
+}*/
+
+.academy {
+  float: left;
+  width: 199px;
+  height: 68px;
+  margin-right: 130px;
+  margin-top: 60px;
+  margin-bottom: 70px;
+  background: url(../img/image-catalog/sprite-catalog/academy-sprite.png);
+  background-repeat: no-repeat;
+}
+
+.academy:link {background-position: 0 0;}
+.academy:hover {
+  background-position: 0 -68px;
+  cursor: pointer;
+}
+
+.iframe {
+position: relative;
+}
+
+.map-adress {
+  width: 318px;
+  height: 250px;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  background-color: white;
+}
+
+.img-map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.map-adress a {
+  display: block;
+  width: 219px;
+  height: 48px;
+  color: white;
+  background-color: red;
+}
+
+address {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 55px;
+}
+
+.map-adress address p {
+  width: 208px;
+  font-size: 16px;
+  line-height: 18px;
+}
 
 /*catalog.html*/
 
+header h1 {
+  font-size: 55px;
+}
+
+.sort ul {
+  list-style: none;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+}
+
 .sort li {
+  font-size: 16px;
   display: inline-block;
+  text-decoration: none;
+}
+
+.sort a {
+  display: block;
+  padding: 0 10px;
 }
 
 .price input {
@@ -180,8 +329,7 @@ aside {
 
 .social {
   display: inline-block;
-  vertical-align: top;
-  width: 43px;
+  width: 120px;
   height: 43px;
   font-size: 0;
   background-color: #000000;
