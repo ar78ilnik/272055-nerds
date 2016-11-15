@@ -32,11 +32,14 @@ a {
   height: 65px;
   margin-right: 200px;
   margin-top: 50px;
-  background: url(../img/image-catalog/sprite-catalog/logo-sprite.png);
+  background: url("../img/image-catalog/sprite-catalog/logo-sprite.png");
   background-repeat: no-repeat;
 }
 
-.logo:link {background-position: 0 0;}
+.logo:link {
+  background-position: 0 0;
+}
+
 .logo:hover {
   background-position: 0 -130px;
   cursor: pointer;
@@ -47,7 +50,6 @@ header ul li a:hover {
   text-decoration: underline;
 }
 /*Navigation for both files*/
-
 .main-navigation {
   width: 440px;
   float: left;
@@ -79,9 +81,7 @@ header ul li a:hover {
   min-height: 65px;
   float: left;
 }
-
 /* File index.html*/
-
 section h1 {
   font-size: 55px;
   line-height: 55px;
@@ -106,8 +106,8 @@ section a {
 }
 
 .slider1 {
-	width: 1160px;
-	height: 431px;
+  width: 1160px;
+  height: 431px;
 }
 
 .slider1 img {
@@ -134,7 +134,9 @@ section a {
 }
 
 .sites {
-  width: 300px; float: left; margin-right: 90px;
+  width: 300px;
+  float: left;
+  margin-right: 90px;
 }
 
 .sites:last-child {
@@ -158,7 +160,8 @@ section a {
 }
 
 .promo {
-  width: 360px; float: left;
+  width: 360px;
+  float: left;
 }
 
 .promo h3 {
@@ -177,8 +180,6 @@ section a {
   float: right;
   margin-right: 0;
 }
-
-
 /*.friends div {
   min-height: 180px;
   float: left;
@@ -191,7 +192,6 @@ section a {
   float: right;
   margin-right: 0;
 }*/
-
 .academy {
   float: left;
   width: 199px;
@@ -199,18 +199,80 @@ section a {
   margin-right: 130px;
   margin-top: 60px;
   margin-bottom: 70px;
-  background: url(../img/image-catalog/sprite-catalog/academy-sprite.png);
+  background: url("../img/image-catalog/sprite-catalog/academy-sprite.png");
   background-repeat: no-repeat;
 }
 
-.academy:link {background-position: 0 0;}
+.academy:link {
+  background-position: 0 0;
+}
+
 .academy:hover {
   background-position: 0 -68px;
   cursor: pointer;
 }
 
+.borodinsky {
+  float: left;
+  width: 209px;
+  height: 90px;
+  margin-right: 130px;
+  margin-top: 60px;
+  margin-bottom: 70px;
+  background: url("../img/image-catalog/sprite-catalog/borodinsky-sprite.png");
+  background-repeat: no-repeat;
+}
+
+.academy:link {
+  background-position: 0 0;
+}
+
+.academy:hover {
+  background-position: 0 -90px;
+  cursor: pointer;
+}
+
+.pink {
+  float: left;
+  width: 185px;
+  height: 52px;
+  margin-right: 130px;
+  margin-top: 60px;
+  margin-bottom: 70px;
+  background: url("../img/image-catalog/sprite-catalog/pink-sprite.png");
+  background-repeat: no-repeat;
+}
+
+.academy:link {
+  background-position: 0 0;
+}
+
+.academy:hover {
+  background-position: 0 -52px;
+  cursor: pointer;
+}
+
+.mishka {
+  float: right;
+  width: 173px;
+  height: 84px;
+  margin-top: 60px;
+  margin-bottom: 70px;
+  background: url("../img/image-catalog/sprite-catalog/mishka-sprite.png");
+  background-repeat: no-repeat;
+}
+
+.academy:link {
+  background-position: 0 0;
+}
+
+.academy:hover {
+  background-position: 0 -84px;
+  cursor: pointer;
+}
+
 .iframe {
-position: relative;
+  position: relative;
 }
 
 .map-adress {
@@ -247,9 +309,7 @@ address {
   font-size: 16px;
   line-height: 18px;
 }
-
 /*catalog.html*/
-
 header h1 {
   font-size: 55px;
 }
@@ -285,46 +345,55 @@ h1 {
 }
 
 aside {
-  float: left; margin-right: 140px;
+  float: left;
+  margin-right: 140px;
 }
 
 .catalog-items {
-  width: 780px; float: left;
+  width: 780px;
+  float: left;
 }
 
 .catalog-items article {
-  width: 360px; float: left; margin-right: 30px; margin-bottom: 36px;
+  width: 360px;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 36px;
 }
 
+.catalog-item:hover {
+  background-image: url("../img/browser-2.png");
+  cursor: pointer;
+}
 /* checkbox sprite */
 .sprite {
-    background-image: url("../img/sprite.png");
-    background-repeat: no-repeat;
-    display: block;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  display: block;
 }
 
 .sprite-ico-checkbox-active {
-    width: 12px;
-    height: 12px;
-    background-position: -10px -10px;
+  width: 12px;
+  height: 12px;
+  background-position: -10px -10px;
 }
 
 .sprite-ico-fb {
-    width: 12px;
-    height: 22px;
-    background-position: -10px -10px;
+  width: 12px;
+  height: 22px;
+  background-position: -10px -10px;
 }
 
 .sprite-ico-inst {
-    width: 21px;
-    height: 21px;
-    background-position: 42px -10px;
+  width: 21px;
+  height: 21px;
+  background-position: 42px -10px;
 }
 
 .sprite-ico-vk {
-    width: 26px;
-    height: 15px;
-    background-position: 83px -10px;
+  width: 26px;
+  height: 15px;
+  background-position: 83px -10px;
 }
 
 .social {
@@ -367,9 +436,7 @@ aside {
   height: 21px;
   background-position: -42px -10px;
 }
-
 /* section catalog-items*/
-
 input[type="checkbox"] {
   display: none;
 }
@@ -388,8 +455,8 @@ input[type="checkbox"] + label::before {
   height: 23px;
   background-image: url("img/image-catalog/checkbox-off.png");
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
 }
 
 input[type="checkbox"]:checked + label::after {
@@ -399,35 +466,33 @@ input[type="checkbox"]:checked + label::after {
   background-image: url("img/image-catalog/checkbox-on.png");
   background-repeat: no-repeat;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
 }
-
 /* radio sprite */
 .sprite {
-    background-image: url("img/image-catalog/radio-sprite.png");
-    background-repeat: no-repeat;
-    display: block;
+  background-image: url("img/image-catalog/radio-sprite.png");
+  background-repeat: no-repeat;
+  display: block;
 }
 
 .sprite-radio-on {
-    width: 25px;
-    height: 25px;
-    background-position: -16px -16px;
+  width: 25px;
+  height: 25px;
+  background-position: -16px -16px;
 }
 
 .sprite-radio-off {
-    width: 25px;
-    height: 25px;
-    background-position: -16px -73px;
+  width: 25px;
+  height: 25px;
+  background-position: -16px -73px;
 }
 
 .sprite-radio-off {
-    width: 25px;
-    height: 25px;
-    background-position: -16px -130px;
+  width: 25px;
+  height: 25px;
+  background-position: -16px -130px;
 }
-
 
 input[type="radio"] {
   display: none;
@@ -460,6 +525,6 @@ input[type="radio"]:checked + label::after {
   background-image: url("img/image-catalog/radio-sprite.png");
   background-repeat: no-repeat;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
 }
