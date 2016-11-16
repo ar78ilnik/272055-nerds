@@ -192,8 +192,7 @@ section a {
   float: right;
   margin-right: 0;
 }*/
-.academy {
-  float: left;
+  /*float: left;
   width: 199px;
   height: 68px;
   margin-right: 130px;
@@ -201,72 +200,89 @@ section a {
   margin-bottom: 70px;
   background: url("../img/image-catalog/sprite-catalog/academy-sprite.png");
   background-repeat: no-repeat;
-}
-
-.academy:link {
+*/
+.academy {
+  content: "";
+  position: relative;
+  width: 199px;
+  height: 68px;
+  margin-right: 130px;
+  background: url("../img/image-index/academy-sprite.png") no-repeat;
   background-position: 0 0;
 }
-
-.academy:hover {
+.academy::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: 0 0;
+}
+.academy::after {
   background-position: 0 -68px;
   cursor: pointer;
 }
 
 .borodinsky {
+  content:"";
+  position: relative;
   float: left;
   width: 209px;
   height: 90px;
   margin-right: 130px;
   margin-top: 60px;
   margin-bottom: 70px;
-  background: url("../img/image-catalog/sprite-catalog/borodinsky-sprite.png");
-  background-repeat: no-repeat;
-}
-
-.academy:link {
+  background: url("../img/image-index/borodinsky-sprite.png") no-repeat;
   background-position: 0 0;
 }
-
-.academy:hover {
+.borodinsky::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: 0 0;
+}
+.borodinsky::after {
   background-position: 0 -90px;
   cursor: pointer;
 }
 
 .pink {
+  content:"";
+  position: relative;
   float: left;
   width: 185px;
   height: 52px;
   margin-right: 130px;
   margin-top: 60px;
   margin-bottom: 70px;
-  background: url("../img/image-catalog/sprite-catalog/pink-sprite.png");
-  background-repeat: no-repeat;
+  background: url("../img/image-index/pink-sprite.png") no-repeat;
 }
-
-.academy:link {
+.pink::before {
+  position: absolute;
+  top: 0;
+  left: 0;
   background-position: 0 0;
 }
-
-.academy:hover {
+.pink::after {
   background-position: 0 -52px;
   cursor: pointer;
 }
 
 .mishka {
+  content:"";
+  position: relative;
   float: right;
   width: 173px;
   height: 84px;
   margin-top: 60px;
   margin-bottom: 70px;
-  background: url("../img/image-catalog/sprite-catalog/mishka-sprite.png");
-  background-repeat: no-repeat;
+  background: url("../img/image-index/mishka-sprite.png") no-repeat;
 }
-
-.academy:link {
+.mishka::before {
+  position: absolute;
+  top: 0;
+  left: 0;
   background-position: 0 0;
 }
-
-.academy:hover {
+.mishka::after {
   background-position: 0 -84px;
   cursor: pointer;
 }
@@ -437,6 +453,8 @@ aside {
   background-position: -42px -10px;
 }
 /* section catalog-items*/
+
+
 input[type="checkbox"] {
   display: none;
 }
@@ -470,7 +488,7 @@ input[type="checkbox"]:checked + label::after {
   left: 0;
 }
 /* radio sprite */
-.sprite {
+/*.sprite {
   background-image: url("img/image-catalog/radio-sprite.png");
   background-repeat: no-repeat;
   display: block;
@@ -492,7 +510,7 @@ input[type="checkbox"]:checked + label::after {
   width: 25px;
   height: 25px;
   background-position: -16px -130px;
-}
+}*/
 
 input[type="radio"] {
   display: none;
@@ -500,31 +518,23 @@ input[type="radio"] {
 
 input[type="radio"] + label {
   display: block;
+  width: 25px;
+  height: 25px;
   padding-left: 30px;
   position: relative;
   cursor: pointer;
 }
 
 input[type="radio"] + label::before {
-  content: "";
-  width: 25px;
-  height: 25px;
-  background-position: -16px -130px;
-  background-image: url("img/image-catalog/radio-sprite.png");
-  background-repeat: no-repeat;
   position: absolute;
+  content: " ";
   top: 0;
   left: 0;
+  background-position: 0 -42px;
+  background: url("img/image-catalog/sprite-catalog/radio-sprite2.png") no-repeat;
 }
 
 input[type="radio"]:checked + label::after {
-  content: "";
-  width: 25px;
-  height: 25px;
-  background-position: -16px -16px;
-  background-image: url("img/image-catalog/radio-sprite.png");
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 0;
-  left: 0;
+  background-position: 0 0;
+  background-image: url("img/image-catalog/sprite-catalog/radio-sprite2.png") no-repeat;
 }
