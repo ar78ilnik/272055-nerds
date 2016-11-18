@@ -3,7 +3,7 @@ body {
   font-weight: 400;
   line-height: 30px;
   font-size: 16px;
-  min-width: 1200px;
+  width: 1440px;
   margin: 0;
   padding: 0;
 }
@@ -15,7 +15,7 @@ body {
 }
 
 .container {
-  width: 1160px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -26,7 +26,7 @@ a {
   text-decoration: none;
 }
 
-.logo {
+/*.logo {
   float: left;
   width: 161px;
   height: 65px;
@@ -34,14 +34,16 @@ a {
   margin-top: 50px;
   background: url("../img/image-catalog/sprite-catalog/logo-sprite.png");
   background-repeat: no-repeat;
-}
+}*/
 
-.logo:link {
-  background-position: 0 0;
+.logo {
+	float: left;
+	margin-right: 140px;
+	margin-top: 48px;
 }
 
 .logo:hover {
-  background-position: 0 -130px;
+  opacity: 0.8;
   cursor: pointer;
 }
 
@@ -50,11 +52,12 @@ header ul li a:hover {
   text-decoration: underline;
 }
 /*Navigation for both files*/
+
 .main-navigation {
   width: 440px;
   float: left;
   margin-right: 245px;
-  margin-top: 65px;
+  margin-top: 84px;
 }
 
 .main-navigation ul {
@@ -81,8 +84,12 @@ header ul li a:hover {
   min-height: 65px;
   float: left;
 }
+
 /* File index.html*/
+
 section h1 {
+  font-family: Roboto;
+  font-weight: 500;
   font-size: 55px;
   line-height: 55px;
   min-height: 110px;
@@ -92,6 +99,8 @@ section h1 {
 }
 
 section p {
+  font-family: Roboto;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   width: 360px;
@@ -149,14 +158,54 @@ section a {
   margin-bottom: 170px;
 }
 
+.sites h2 {
+  font-family: Roboto;
+  font-weight: 700;
+}
+
+.sites p {
+  font-family: Roboto;
+  font-weight: 400;
+}
+
+.sites a {
+  font-family: Roboto;
+  font-weight: 500;
+}
+
 .info {
   width: 650px;
   float: left;
   margin-right: 140px;
 }
 
+.info h2 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 45px;
+}
+
+.info h3 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.info p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .info ul {
   list-style: none;
+}
+
+.info ul li {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .promo {
@@ -165,8 +214,10 @@ section a {
 }
 
 .promo h3 {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 45px;
   font-size: 16px;
-  font-weight: bold;
 }
 
 .promo div {
@@ -180,111 +231,24 @@ section a {
   float: right;
   margin-right: 0;
 }
-/*.friends div {
-  min-height: 180px;
-  float: left;
-  margin-right: 130px;
-  margin-top: 60px;
-  margin-bottom: 162px;
+
+figure img {
+	float: left;
+	margin-right: 100px;
 }
 
-.friends div:last-child {
-  float: right;
-  margin-right: 0;
-}*/
-  /*float: left;
-  width: 199px;
-  height: 68px;
-  margin-right: 130px;
-  margin-top: 60px;
-  margin-bottom: 70px;
-  background: url("../img/image-catalog/sprite-catalog/academy-sprite.png");
-  background-repeat: no-repeat;
-*/
-.academy {
-  content: "";
-  position: relative;
-  width: 199px;
-  height: 68px;
-  margin-right: 130px;
-  background: url("../img/image-index/academy-sprite.png") no-repeat;
-  background-position: 0 0;
-}
-.academy::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-position: 0 0;
-}
-.academy::after {
-  background-position: 0 -68px;
-  cursor: pointer;
+figure img:hover {
+	opacity: 0.5;
+	cursor: pointer;
 }
 
-.borodinsky {
-  content:"";
-  position: relative;
-  float: left;
-  width: 209px;
-  height: 90px;
-  margin-right: 130px;
-  margin-top: 60px;
-  margin-bottom: 70px;
-  background: url("../img/image-index/borodinsky-sprite.png") no-repeat;
-  background-position: 0 0;
-}
-.borodinsky::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-position: 0 0;
-}
-.borodinsky::after {
-  background-position: 0 -90px;
-  cursor: pointer;
+figure img:last-child {
+	margin-right: 0;
+	float: right;
 }
 
-.pink {
-  content:"";
-  position: relative;
-  float: left;
-  width: 185px;
-  height: 52px;
-  margin-right: 130px;
-  margin-top: 60px;
-  margin-bottom: 70px;
-  background: url("../img/image-index/pink-sprite.png") no-repeat;
-}
-.pink::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-position: 0 0;
-}
-.pink::after {
-  background-position: 0 -52px;
-  cursor: pointer;
-}
-
-.mishka {
-  content:"";
-  position: relative;
-  float: right;
-  width: 173px;
-  height: 84px;
-  margin-top: 60px;
-  margin-bottom: 70px;
-  background: url("../img/image-index/mishka-sprite.png") no-repeat;
-}
-.mishka::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-position: 0 0;
-}
-.mishka::after {
-  background-position: 0 -84px;
-  cursor: pointer;
+figure {
+	margin-bottom: 160px;
 }
 
 .iframe {
@@ -315,37 +279,70 @@ section a {
 }
 
 address {
+  width: 210px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 55px;
+  margin-top: 45px;
 }
 
-.map-adress address p {
+address p {
   width: 208px;
   font-size: 16px;
   line-height: 18px;
 }
+
+address p:first-child {
+  font-weight: bold;
+}
+
+.cross {
+		border: 1px solid black;
+  float: right;
+  width: 21px;
+  height: 21px;
+  margin-right: 100px;
+  margin-top: 45px;
+  background: url("../img/image-index/cross-sprite.png") no-repeat;
+}
+
+.cross:link {
+  background-position: 0 0;
+}
+
+.cross:hover {
+  background-position: 0 -21px;
+  cursor: pointer;
+}
+
+form p:nth-child(1) {
+	float: left;
+}
+
+form p:nth-child(2) {
+	float: right;
+}
+
+form input[type="text"]:nth-child(1){
+  width: 130px;
+  float: left;
+  margin-right: 140px;
+}
+
+form input[type="email"]:nth-child(2){
+  width: 130px;
+  float: right;
+}
+
 /*catalog.html*/
-header h1 {
+
+.main-navigation, .card {
+  margin-bottom: 88px;
+}
+
+.main-navigation h1 {
+  font-size: Roboto;
+  font-weight: 500;
   font-size: 55px;
-}
-
-.sort ul {
-  list-style: none;
-  font-size: 0;
-  margin: 0;
-  padding: 0;
-}
-
-.sort li {
-  font-size: 16px;
-  display: inline-block;
-  text-decoration: none;
-}
-
-.sort a {
-  display: block;
-  padding: 0 10px;
 }
 
 .price input {
@@ -361,6 +358,7 @@ h1 {
 }
 
 aside {
+  width: 260px;
   float: left;
   margin-right: 140px;
 }
@@ -368,6 +366,7 @@ aside {
 .catalog-items {
   width: 780px;
   float: left;
+  margin-top: 20px;
 }
 
 .catalog-items article {
@@ -380,6 +379,28 @@ aside {
 .catalog-item:hover {
   background-image: url("../img/browser-2.png");
   cursor: pointer;
+}
+
+.sort span {
+  display: block;
+  width: 360px;
+  float: left;
+  margin-right: 30px;
+}
+
+.sort ul {
+  display: block;
+  width: 300px;
+  float: left;
+}
+
+.sort ul li {
+  display: inline;
+}
+
+.pagination ul li {
+  display: inline;
+  text-decoration: none;
 }
 /* checkbox sprite */
 .sprite {
@@ -451,6 +472,15 @@ aside {
   width: 21px;
   height: 21px;
   background-position: -42px -10px;
+}
+
+.write-us {
+  width: 960px;
+}
+
+.write-us h2 {
+  margin-left: 100px;
+  margin-top: 75px;
 }
 /* section catalog-items*/
 
