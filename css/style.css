@@ -84,10 +84,94 @@ a {
 
 }
 
-.sliders {
-background-color: orange;
+.features .sites {
+  float: left;
+  margin-right: 100px;
+  margin-bottom: 85px;
 }
 
+.features .sites:last-child {
+  margin-right: 0;
+}
+
+.features .sites p {
+  margin-bottom: 36px;
+}
+.features .sites a {
+  font-size: 16px;
+  line-height: 18px;
+  width: 160px;
+  height: 50px;
+  padding: 19px 40px 19px 40px;
+  text-transform: uppercase;
+}
+
+.features .sites:nth-child(1) a {
+  background-color: #fb565a;
+}
+
+.features .sites:nth-child(2) a {
+  background-color: #00ca74;
+}
+
+.features .sites:nth-child(3) a {
+  background-color: #efc849;
+}
+
+.info {
+  float: left;
+  width: 600px;
+  margin-right: 140px;
+}
+
+.info h2 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.info p {
+  width: 560px;
+}
+
+.info h3 {
+  font-weight: 700;
+}
+
+.info li {
+  list-style-type: none;
+  padding-top: 40px;
+}
+
+.promo {
+  float: right;
+}
+
+.projects-item {
+  float: left;
+  margin-right: 95px;
+  margin-top: 80px;
+}
+
+iframe {
+  width: 100%;
+}
+
+.social {
+  margin-left: 20px;
+  margin-right: 140px;
+  float: left;
+}
+
+footer .footer-promo {
+  width: 600px;
+  float: left;
+}
+
+footer .footer-promo h3 {
+  font-size: 36px;
+  font-weight: 700;
+}
 /* Catalog.html*/
 
 h1 {
@@ -238,9 +322,14 @@ aside {
 	width: 260px;
 	float: left;
 	margin-right: 100px;
-  background-color: #cdcccb;
+  border-radius: 5px;
 }
 
+form button {
+  width: 260px;
+  height: 50px;
+  background-color: #eeeeee;
+}
 .catalog-items {
   width: 780px;
   float: left;
@@ -334,46 +423,49 @@ height: 30px;
 
 /* Form sprite*/
 
-input[type="checkbox"] {
+/* CHECKBOXES */
+input[type="checkbox"] + label {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  padding-left: 36px;
+}
+
+.features-form input {
   display: none;
 }
 
-input[type="checkbox"] + label {
-  width: 30px;
-  height: 30px;
-  display: block;
-  margin: 10px 0;
-  line-height: 20px;
-  padding-left: 50px;
-  position: relative;
-  cursor: pointer;
-}
-
-input[type="checkbox"] + label::before {
+input[type="checkbox"] + label::before,
+input[type="checkbox"]:checked + label::before {
   content: "";
+  position: absolute;
+  left: 1px;
+  top: -2px;
   display: block;
-  width: 30px;
-  height: 30px;
-  background: url('../img/spritesheet.png') no-repeat;
+  width: 27px;
+  height: 23px;
   background-position: 0 -30px;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  background-image: url("../img/spritesheet.png");
+  background-repeat: no-repeat;
+  opacity: 0.6;
 }
 
-input[type="checkbox"]:checked + label::after {
-  content: "";
-  display: block;
-  width: 30px;
-  height: 30px;
-  background: url('../img/spritesheet.png') no-repeat;
+input[type="checkbox"]:checked + label::before {
   background-position: 0 -60px;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  top: 50%;
-  left: 50%;
 }
+
+input[type="checkbox"] + label:hover::before {
+  opacity: 1;
+}
+
+input[type="checkbox"]:disabled + label::before {
+  opacity: 0.1;
+}
+
+input[type="checkbox"]:disabled + label {
+  color: rgba(40, 49, 54, 0.3);
+}
+/* END CHECKBOXES */
 
 
 /* Sprite radio*/
